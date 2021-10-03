@@ -5,14 +5,17 @@
 void hanoi(int n, char A, char B, char C)
 {
 	if (n == 1)
+	{
 		printf("%c-->%c\n", A, C);
+		printf("---------\n");
+	}
 	else
 	{
 		hanoi(n - 1, A, C, B);
 		printf("%c-->%c\n",A,C);
 		
 		hanoi(n - 1, B, A, C);
-		printf("--------\n");
+		
 
 	}
 
