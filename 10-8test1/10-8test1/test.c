@@ -9,12 +9,15 @@ void menu()
 	printf("***********************\n");
 }
 
+char ret = 0;  //接受游戏状态
+
+
 void game()
 {
 	char board[ROW][COL];
 	InitBoard(board, ROW, COL);
 	DisplayBoard(board, ROW, COL);
-	char ret = 0;
+	
 	while (1)
 	{
 		//玩家下棋
@@ -23,6 +26,7 @@ void game()
 		DisplayBoard(board, ROW, COL);
 		//判断是否结束游戏
 		ret = IsWin(board, ROW, COL);
+		
 		if (ret != 'C')
 		{
 			break;
@@ -36,15 +40,10 @@ void game()
 		//判断是否结束游戏
 		ret = IsWin(board, ROW, COL);
 
-		if (ret != 'C')
+		if (ret != 'C')                               //  BUG :  1.平局不退出   2.电脑下棋会把玩家的棋子覆盖
 		{
 			break;
 		}
-
-
-
-
-
 
 
 	}
@@ -66,6 +65,8 @@ void game()
 	DisplayBoard(board, ROW, COL);
 
 }
+
+
 
 int main()
 {

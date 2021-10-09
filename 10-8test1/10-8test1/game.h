@@ -7,8 +7,8 @@
 
 
 //符号的定义
-#define ROW 10
-#define COL 10
+#define ROW 3
+#define COL 3
 
 
 
@@ -24,4 +24,10 @@ void PlayerMove(char board[ROW][COL],int row,int col);
 //电脑走
 void ComputerMove(char board[ROW][COL], int row, int col);
 
+//判断输赢
+
+//   玩家赢 -- *
+//   电脑赢 -- #
+//   平局   -- Q
+//   游戏继续 == C
 char IsWin(char board[ROW][COL], int row, int col);
