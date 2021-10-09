@@ -14,11 +14,64 @@ void game()
 	char board[ROW][COL];
 	InitBoard(board, ROW, COL);
 	DisplayBoard(board, ROW, COL);
+	char ret = 0;
+	while (1)
+	{
+		//玩家下棋
+		PlayerMove(board, ROW, COL);
+
+		DisplayBoard(board, ROW, COL);
+		//判断是否结束游戏
+		ret = IsWin(board, ROW, COL);
+		if (ret != 'C')
+		{
+			break;
+		}
+
+		//电脑下棋
+		ComputerMove(board, ROW, COL);
+
+		DisplayBoard(board, ROW, COL);
+
+		//判断是否结束游戏
+		ret = IsWin(board, ROW, COL);
+
+		if (ret != 'C')
+		{
+			break;
+		}
+
+
+
+
+
+
+
+	}
+	if (ret == '*')
+	{
+		printf("玩家赢了\n");
+		
+
+	}
+	else if (ret == '#')
+	{
+		printf("电脑赢了\n");
+		
+	}
+	else
+	{
+		printf("平局\n");
+	}
+	DisplayBoard(board, ROW, COL);
+
 }
 
 int main()
 {
 	int c = 0;
+
+	srand((unsigned int)time(NULL));
 	do
 	{
 		menu();
