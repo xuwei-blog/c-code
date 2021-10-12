@@ -103,9 +103,14 @@ void FindMine(char mine[ROWS][COLS], char show[ROWS][COLS], int row, int col)
 			}
 			else
 			{
+
 				//不是雷,统计周围几个雷
+
+
 				int count = get_mine_count(mine,x,y);    //不需要进入头文件,因为只服务当前函数
+
 				show[x][y] = count + '0';
+
 
 				//显示排查出的信息
 				DisplayBoard(show, row, col);
