@@ -1,0 +1,4 @@
+﻿  10-20test1.c
+D:\C-PENG\c-code\10-20test1\10-20test1\10-20test1.c(20,6): warning C4013: “gets”未定义；假设外部返回 int
+D:\C-PENG\c-code\10-20test1\10-20test1\10-20test1.c(30,36): warning C4554: “&”: 检查运算符优先级是否存在的可能的错误；使用括号阐明优先级
+  10-20test1.vcxproj -> D:\C-PENG\c-code\10-20test1\Debug\10-20test1.exe
