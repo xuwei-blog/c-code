@@ -1,0 +1,3 @@
+﻿  demo.c
+D:\C-PENG\c-code\10-28test3\10-28test3\demo.c(9,57): warning C4047: “==”:“int”与“char [2]”的间接级别不同
+  10-28test3.vcxproj -> D:\C-PENG\c-code\10-28test3\Debug\10-28test3.exe
