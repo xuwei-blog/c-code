@@ -1,0 +1,4 @@
+﻿  demo.c
+D:\C-PENG\c-code\11-2test3\11-2test3\demo.c(20,14): warning C4047: “=”:“char”与“char *”的间接级别不同
+D:\C-PENG\c-code\11-2test3\11-2test3\demo.c(18,1): warning C4047: “初始化”:“char *”与“char”的间接级别不同
+  11-2test3.vcxproj -> D:\C-PENG\c-code\11-2test3\Debug\11-2test3.exe
