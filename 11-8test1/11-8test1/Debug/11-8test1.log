@@ -1,0 +1,3 @@
+﻿  demo.c
+D:\C-PENG\c-code\11-8test1\11-8test1\demo.c(29): warning C4715: “my_strstr”: 不是所有的控件路径都返回值
+  11-8test1.vcxproj -> D:\C-PENG\c-code\11-8test1\Debug\11-8test1.exe
