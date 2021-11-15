@@ -43,17 +43,22 @@ int main()
 			AddContact(&con);
 			break;
 		case del:
+			DelContact(&con);
 			break;
 		case search:
+			SearchContact(&con);
 			break;
 		case modify:
+			ModifyContact(&con);
 			break;
 		case sort:
+			//自己完善
 			break;
 		case print:
 			PrintContact(&con);   //即使不修改数据 传地址也比较好
 			break;
 		case exit:
+			printf("退出通讯录\n");
 			break;
 		default:
 			printf("输入有误,请重新输入;>");

@@ -42,3 +42,18 @@ void AddContact(Contact* pc);
 
 //打印通讯录信息
 void PrintContact(const Contact* pc);
+
+
+//删除通讯录的信息
+void DelContact(Contact* pc);
+
+//查找通讯录
+void SearchContact(Contact* pc);
+
+
+//FindByName定义
+int FindByName(Contact* pc, char name[]);
+
+
+//修改通讯录
+void ModifyContact(Contact* pc);
