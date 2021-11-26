@@ -1,0 +1,5 @@
+﻿  demo.c
+D:\C-PENG\c-code\11-26test1\11-26test1\demo.c(31,22): warning C4047: “函数”:“char *”与“char *[100]”的间接级别不同
+D:\C-PENG\c-code\11-26test1\11-26test1\demo.c(31,18): warning C4024: “my_strcpy2”: 形参和实参 2 的类型不同
+D:\C-PENG\c-code\11-26test1\11-26test1\demo.c(32,9): warning C4477: “printf”: 格式字符串“%s”需要类型“char *”的参数，但可变参数 1 拥有了类型“char **”
+  11-26test1.vcxproj -> D:\C-PENG\c-code\11-26test1\Debug\11-26test1.exe
