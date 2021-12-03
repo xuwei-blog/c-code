@@ -15,6 +15,12 @@ static int score = 0;
 static int kx = 0;    //用户按下wasd 得到的坐标
 static int ky = 0;
 
+static int lastx = 0;  //蛇尾的坐标
+static int lasty = 0;
+
+static int sleepsed = 400;
+
+
 //一个身体的对象
 struct BODY
 {
@@ -45,3 +51,7 @@ void InitFood();
 void InitUI();
 
 void PlayGame();
+
+void InitWall();
+
+void ShowScore();
