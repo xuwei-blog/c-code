@@ -1,0 +1,3 @@
+﻿  demo.c
+D:\C-PENG\c-code\12-6test1\12-6test1\demo.c(12,20): warning C4047: “=”:“LinkNode *”与“int”的间接级别不同
+  12-6test1.vcxproj -> D:\C-PENG\c-code\12-6test1\Debug\12-6test1.exe

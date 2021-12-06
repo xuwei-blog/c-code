@@ -17,6 +17,7 @@ int main()
 	struct LinkNode node4 = { 40,NULL };
 	struct LinkNode node5 = { 50,NULL };
 
+	printf("%d",node1.num);
 	//建立关系
 	node1.next = &node2;
 	node2.next = &node3;
