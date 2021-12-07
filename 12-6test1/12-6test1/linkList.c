@@ -1,48 +1,37 @@
 #include "linkList.h"
-
-
 //初始化链表
 struct LinkNode* initLinkList()
 {
 	//创建头节点
-	struct LinkNode* pHeader = malloc(sizeof(struct LinkNode));
-
-	if (pHeader == NULL)
+	struct LinkNode* pHeader = malloc(sizeof(struct LinkNode));         //开辟pheader堆空间
+	if (pHeader == NULL)                                                //开辟不成功返回NULL
 	{
 		return NULL;
 	}
-
 	//初始化头节点
 	//pHeader->num = -1;  //头节点 不维护数据域
-	pHeader->next = NULL;
-
+	pHeader->next = NULL;                                               //初始化头节点的next
 	//记录尾节点位置，方便插入新的数据
-	struct LinkNode* pTail = pHeader;
+	struct LinkNode* pTail = pHeader;                                    //尾节点被浅拷贝成头节点 逐字节拷贝 此时拥有pheader的next=NULL
 	int val = -1;
 	while (1)
 	{
 		//让用户初始化几个节点，如果用户输入的是-1，代表插入结束
 		printf("请初始化链表，如果输入-1代表结束\n");
 		scanf("%d", &val);
-
 		if (val == -1)
 		{
 			break;
 		}
-
 		//如果输入不是-1  插入节点到链表中
-		struct LinkNode* newNode = malloc(sizeof(struct LinkNode));
+		struct LinkNode* newNode = malloc(sizeof(struct LinkNode));      //开辟newnode节点 并初始化
 		newNode->num = val;
-		newNode->next = NULL;
-
+		newNode->next = NULL;          
 		//更改指针的指向
-		pTail->next = newNode;
+		pTail->next = newNode;                                           //尾节点第一次循环改变pheader->newnode
 		//更新新的尾节点的指向
-		pTail = newNode;
-
+		pTail = newNode;                                                 //ptail初始化
 	}
-
-
 	return pHeader;
 }
 
